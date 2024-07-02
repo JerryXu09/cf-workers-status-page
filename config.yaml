@@ -1,8 +1,8 @@
 settings:
-  title: 'Status Page 状态页面'
+  title: '状态页面'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 15 # number of days you want to display in histogram
+  daysInHistogram: 7 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational/所有服务运行正常'
@@ -10,8 +10,8 @@ settings:
   monitorLabelOperational: 'Operational/正常'
   monitorLabelNotOperational: 'Not Operational/故障'
   monitorLabelNoData: 'No data/无数据'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  dayInHistogramNoData: 'No data/无数据'
+  dayInHistogramOperational: 'All good/全部正常'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
@@ -22,10 +22,10 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
 #   - id: test-cf
-#    name: www.cloudflare.com
+#     name: www.cloudflare.com
 #     description: 'Built for anything connected to the Internet.'
 #     url: 'https://www.cloudflare.com'
 #     method: GET
