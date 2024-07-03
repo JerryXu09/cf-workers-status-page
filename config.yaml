@@ -12,7 +12,7 @@ settings:
   monitorLabelNoData: 'No data/无数据'
   dayInHistogramNoData: 'No data/无数据'
   dayInHistogramOperational: 'All good/全部正常'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' 次停机/incident(s)' # xx incident(s) recorded
 
 monitors:
   - id: ks-xzj678 # unique identifier
