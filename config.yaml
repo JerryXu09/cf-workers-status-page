@@ -24,13 +24,13 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-   - id: serv00-s3
-     name: jerryxu.serv00.net&p01.jerryxu.serv00.net
-     description: '在Serv00(s3)上的主机,目前暂无用途;同样在s3上，目前用于Vle*s代理服务。'
-     url: 'https://jerryxu.serv00.net' 
-     method: GET 
-     expectStatus: 200
-     linkable: false # allows the title to be a link, default=true
+  - id: serv00-s3
+    name: jerryxu.serv00.net&p01.jerryxu.serv00.net
+    description: '在Serv00(s3)上的主机,目前暂无用途;同样在s3上，目前用于Vle*s代理服务。'
+    url: 'https://jerryxu.serv00.net' 
+    method: GET 
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
 
 #   - id: blog-cloudflare-com
 #     name: The Cloudflare Blog
