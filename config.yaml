@@ -24,12 +24,12 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: local-ks
-    name: local.xzj678.eu.org(port 8001)
-    description: '同样用于部分内容发布以及ngcz直播地址获取服务，但由家宽IPv6直接通向公网，在本地保证最快访问速度。仅支持IPv6访问！'
-    url: 'http://loc.xzj678.eu.org:8001/'
-    method: GET
-    expectStatus: 200
+#  - id: local-ks
+#    name: local.xzj678.eu.org(port 8001)
+#    description: '同样用于部分内容发布以及ngcz直播地址获取服务，但由家宽IPv6直接通向公网，在本地保证最快访问速度。仅支持IPv6访问！'
+#    url: 'http://loc.xzj678.eu.org:8001/'
+#    method: GET
+#    expectStatus: 200
 
   - id: serv00-s3
     name: jerryxu.serv00.net及其子域
