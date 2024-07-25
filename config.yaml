@@ -17,23 +17,25 @@ settings:
 monitors:
   - id: ks-xzj678 # unique identifier
     name: ks.xzj678.eu.org
-    description: '负责部分内容发布以及ngcz直播地址获取服务。由Cloudflare提供CDN加速和Tunnel服务。' # default=empty
+    description: '用于部分内容发布以及ngcz直播地址获取服务。由Cloudflare提供CDN加速和Tunnel服务。' # default=empty
     url: 'https://ks.xzj678.eu.org/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+  - id: local-ks
+    name: local.xzj678.eu.org(port 8001)
+    description: '同样用于部分内容发布以及ngcz直播地址获取服务，但由家宽IPv6直接通向公网，在本地保证最快访问速度。仅支持IPv6访问！'
+    url: 'http://loc.xzj678.eu.org:8001/'
+    method: GET
+    expectStatus: 200
+
+
   - id: serv00-s3
-    name: jerryxu.serv00.net&p01.jerryxu.serv00.net
-    description: '在Serv00(s3)上的主机,目前暂无用途;同样在s3上，目前用于Vle*s代理服务。'
+    name: jerryxu.serv00.net及其子域
+    description: '在Serv00(s3)上的主机,目前用于Vle*s代理服务。'
     url: 'https://jerryxu.serv00.net' 
     method: GET 
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
-
-#   - id: blog-cloudflare-com
-#     name: The Cloudflare Blog
-#     url: 'https://blog.cloudflare.com/'
-#     method: GET
-#     expectStatus: 200
