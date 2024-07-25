@@ -31,11 +31,10 @@ monitors:
     method: GET
     expectStatus: 200
 
-
   - id: serv00-s3
     name: jerryxu.serv00.net及其子域
     description: '在Serv00(s3)上的主机,目前用于Vle*s代理服务。'
-    url: 'https://jerryxu.serv00.net' 
-    method: GET 
+    url: 'https://jerryxu.serv00.net'
+    method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
